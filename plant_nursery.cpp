@@ -14,6 +14,8 @@ public:
     string name;
     int quantity;
     double price;
+
+    Product(){};
     Product(const string& n, int q, double p)
     {
         name = n;
@@ -40,6 +42,7 @@ public:
     }
 };
 
+
 class Seed : public Product {
 
 public:
@@ -50,8 +53,12 @@ public:
     }
 };
 
-class Fertilizer : public Product { 
+
+class Fertilizer : public Product {
+    
 public:
+   
+
     Fertilizer(const string& name, int quantity, double price) : Product(name, quantity, price) {}
 
     void display() {
@@ -62,6 +69,7 @@ public:
 
 class NurseryManagementSystem {
     map<string, Product*> products; 
+
 public:
     NurseryManagementSystem() 
     {
@@ -264,8 +272,10 @@ public:
 
 
 int main()
-{  
+{
+    
     NurseryManagementSystem nursery;
+
     cout<<"**************************************** PLANT ABODE *****************************************"<<endl;
     cout<<"Choose what you want:"<<endl;
     cout<<"Press 1 for USER LOGIN"<<endl;

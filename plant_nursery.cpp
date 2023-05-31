@@ -135,7 +135,12 @@ public:
         reg<<user<<' '<<pass<<endl;
         cout<<"Registration is successful\n";
     }
+    friend void ShowUser(RegisterUser &ref);
 };
+void ShowUser(RegisterUser &ref)
+{
+    cout<<ref.user<<endl;
+}
 
 class LoginUser{
 protected:

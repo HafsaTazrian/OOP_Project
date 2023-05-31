@@ -81,8 +81,8 @@ public:
         products["YellowRose"] = new Plant("YellowRose", 200, 250);
         products["AloeVera"] = new Plant("AloeVera", 300, 50);
         products["Rosemary"] = new Plant("Rosemary", 250, 300);
-        products["TomatoSeed"] = new Seed("Tomato Seed", 500, 30);
-        products["CherryTomatoSeed"] = new Seed("Cherry Tomato Seed", 350, 100);
+        products["TomatoSeed"] = new Seed("TomatoSeed", 500, 30);
+        products["CherryTomatoSeed"] = new Seed("CherryTomatoSeed", 350, 100);
         products["Nitrogen"] = new Fertilizer("Nitrogen", 500, 550);
         products["Phosphorus"] = new Fertilizer("Phosphorus", 500, 550);
         products["Potassium"] = new Fertilizer("Potassium", 500, 600);
